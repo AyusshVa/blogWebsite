@@ -1,0 +1,11 @@
+<%- include("partials/header") -%>
+
+<h1>Home</h1> 
+<p> <%= content %></p>
+<% arr.forEach((ele)=>{ %>
+    <h1><%= ele.title %></h1>
+    <p style="display: inline;"><%= ele.content.slice(0,100).concat('...')%></p>
+    <a href="/post/<%= ele.title %>">Read more</a>
+<% }) %>
+
+<%- include('partials/footer') -%>
