@@ -1,0 +1,12 @@
+steps: 
+ remove the static array pushing and replace it with 
+mongodb insertion.
+1. create the mongo model with the schema.
+2. schema = { title: String, postContent: string}
+3. insert 2 random items.
+4. in app.get("/compose", ()=> {
+here make object and save (insert kro in the database)
+})
+5. to render. -> ( inside post.ejs and home.ejs)
+according to title, data find kro, and retun me 
+js object aaega, uska title and postcontent render kro.
